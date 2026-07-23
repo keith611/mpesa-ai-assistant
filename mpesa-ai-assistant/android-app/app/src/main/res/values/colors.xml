@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="canvas">#F5F8F6</color>
+    <color name="white">#FFFFFF</color>
+    <color name="sidebar">#101F1B</color>
+    <color name="ink">#16231F</color>
+    <color name="ink_secondary">#5E6E68</color>
+    <color name="brand">#0F6659</color>
+    <color name="brand_hover">#0C544A</color>
+    <color name="success">#2F9E6E</color>
+    <color name="success_bg">#E1F5EE</color>
+    <color name="warning">#E3A23D</color>
+    <color name="warning_bg">#FAEEDA</color>
+    <color name="warning_text">#633806</color>
+    <color name="danger">#C1483B</color>
+    <color name="danger_bg">#FCEBEB</color>
+</resources>

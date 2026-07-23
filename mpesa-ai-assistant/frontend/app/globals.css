@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-canvas text-ink font-sans antialiased;
+  }
+
+  * {
+    @apply border-border;
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-surface border border-border rounded-card p-4;
+  }
+
+  .badge {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium;
+  }
+
+  .table-figure {
+    @apply font-mono tabular-nums;
+  }
+
+  .status-dot {
+    @apply inline-block w-[7px] h-[7px] rounded-full;
+  }
+
+  .nav-item {
+    @apply flex items-center gap-2.5 px-3 py-2.5 rounded-lg text-[13px] font-medium text-sidebar-text transition-colors;
+  }
+
+  .nav-item:hover {
+    @apply bg-sidebar-active/60 text-white;
+  }
+
+  .nav-item-active {
+    @apply bg-sidebar-active text-white;
+  }
+}

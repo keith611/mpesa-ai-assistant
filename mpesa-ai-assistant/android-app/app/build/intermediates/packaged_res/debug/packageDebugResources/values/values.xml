@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="brand">#0F6659</color>
+    <color name="brand_hover">#0C544A</color>
+    <color name="canvas">#F5F8F6</color>
+    <color name="danger">#C1483B</color>
+    <color name="danger_bg">#FCEBEB</color>
+    <color name="ink">#16231F</color>
+    <color name="ink_secondary">#5E6E68</color>
+    <color name="sidebar">#101F1B</color>
+    <color name="success">#2F9E6E</color>
+    <color name="success_bg">#E1F5EE</color>
+    <color name="warning">#E3A23D</color>
+    <color name="warning_bg">#FAEEDA</color>
+    <color name="warning_text">#633806</color>
+    <color name="white">#FFFFFF</color>
+    <plurals name="pending_count">
+        <item quantity="one">%d transaction waiting to sync</item>
+        <item quantity="other">%d transactions waiting to sync</item>
+    </plurals>
+    <string name="already_have_account">Already have an account? Sign in</string>
+    <string name="app_name">M-Pesa AI Assistant</string>
+    <string name="confirm_password_hint">Confirm password</string>
+    <string name="create_account">Create account</string>
+    <string name="error_missing_fields">Enter your phone number and password.</string>
+    <string name="error_missing_registration_fields">Please fill in every field.</string>
+    <string name="error_password_mismatch">Passwords don\'t match.</string>
+    <string name="error_password_too_short">Password must be at least 8 characters.</string>
+    <string name="forgot_password_link">Forgot password?</string>
+    <string name="forgot_password_subtitle_step1">Enter your phone number and we\'ll send a reset code to your WhatsApp.</string>
+    <string name="forgot_password_title">Reset your password</string>
+    <string name="full_name_hint">Full name</string>
+    <string name="last_checked">Last checked %1$s</string>
+    <string name="linked_as">Linked as %1$s</string>
+    <string name="login_subtitle">Sign in to link this device</string>
+    <string name="new_here_register">New here? Create an account</string>
+    <string name="new_password_hint">New password</string>
+    <string name="password_hint">Password</string>
+    <string name="permission_banner_text">SMS permission is off, so new M-Pesa messages won\'t be captured. Enable it in Settings > Apps > M-Pesa AI Assistant > Permissions.</string>
+    <string name="phone_number_hint">Phone number</string>
+    <string name="recent_transactions">Recent transactions</string>
+    <string name="register_subtitle">Set up your M-Pesa AI Assistant account</string>
+    <string name="reset_code_hint">6-digit code from WhatsApp</string>
+    <string name="reset_code_sent">If that number is registered, a code was sent to your WhatsApp. It expires in 10 minutes.</string>
+    <string name="reset_password_button">Reset password</string>
+    <string name="reset_success">Password reset. Sign in with your new password.</string>
+    <string name="send_reset_code">Send reset code</string>
+    <string name="sign_in">Sign in</string>
+    <string name="sign_out">Sign out</string>
+    <string name="sync_now">Sync now</string>
+    <string name="whatsapp_hint_text">This is the number you\'ll message on WhatsApp to check your balance and spending.</string>
+    <string name="whatsapp_number_hint">WhatsApp number</string>
+    <style name="Theme.MpesaAiAssistant" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/brand</item>
+        <item name="colorPrimaryVariant">@color/brand_hover</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="android:statusBarColor">@color/sidebar</item>
+        <item name="android:windowBackground">@color/canvas</item>
+    </style>
+</resources>

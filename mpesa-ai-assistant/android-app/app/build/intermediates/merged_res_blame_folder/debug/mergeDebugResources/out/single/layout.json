@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.mpesaai.assistant.app-mergeDebugResources-42:\\layout\\activity_login.xml",
+        "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.mpesaai.assistant.app-main-45:\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.mpesaai.assistant.app-mergeDebugResources-42:\\layout\\activity_register.xml",
+        "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.mpesaai.assistant.app-main-45:\\layout\\activity_register.xml"
+    },
+    {
+        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.mpesaai.assistant.app-mergeDebugResources-42:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.mpesaai.assistant.app-main-45:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.mpesaai.assistant.app-mergeDebugResources-42:\\layout\\item_pending_transaction.xml",
+        "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.mpesaai.assistant.app-main-45:\\layout\\item_pending_transaction.xml"
+    },
+    {
+        "merged": "com.mpesaai.assistant.app-mergeDebugResources-42:/layout/activity_change_password.xml",
+        "source": "com.mpesaai.assistant.app-main-45:/layout/activity_change_password.xml"
+    },
+    {
+        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.mpesaai.assistant.app-mergeDebugResources-42:\\layout\\activity_forgot_password.xml",
+        "source": "C:\\Users\\Admin\\.gradle\\daemon\\8.7\\com.mpesaai.assistant.app-main-45:\\layout\\activity_forgot_password.xml"
+    }
+]

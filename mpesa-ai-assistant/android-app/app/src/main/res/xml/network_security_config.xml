@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Allows plaintext HTTP only to the emulator's host-loopback alias and
+    common LAN dev ranges, for local testing against a backend started
+    with uvicorn's auto reload mode.
+    Remove domain-config entries and rely on the base HTTPS-only config
+    before shipping a release build against a real backend.
+-->
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="false">10.0.2.2</domain>
+	<domain includeSubdomains="false">192.168.0.106</domain>
+        <domain includeSubdomains="false">localhost</domain>
+    </domain-config>
+    <base-config cleartextTrafficPermitted="false" />
+</network-security-config>
