@@ -17,7 +17,7 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
 
         // Overridden per-build via gradle.properties or -P flags; safe placeholder defaults here.
-        buildConfigField "String", "API_BASE_URL", "\"http://192.168.0.106:8000/api/v1/\""
+        buildConfigField "String", "API_BASE_URL", "https://mpesa-ai-assistant.onrender.com/api/v1"
         buildConfigField "String", "DEVICE_API_KEY", "\"cc4672d884430b2ed21dfeca8d82fcad335e67da596c4c8aaf584016b897ddb9\""
     }
 
