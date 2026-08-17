@@ -9,7 +9,7 @@ const plexMono = IBM_Plex_Mono({ subsets: ["latin"], weight: ["400", "500"], var
 
 export const metadata: Metadata = {
   title: "Fidika — Admin Panel",
-  description: "Admin dashboard for the M-Pesa AI Assistant platform",
+  description: "Admin dashboard for the Fidika platform",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
