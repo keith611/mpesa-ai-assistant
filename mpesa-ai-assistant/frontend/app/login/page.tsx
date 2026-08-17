@@ -27,7 +27,7 @@ export default function LoginPage() {
     <div className="min-h-screen flex items-center justify-center bg-sidebar px-4">
       <div className="w-full max-w-sm">
         <div className="text-center mb-8">
-          <div className="font-display font-bold text-2xl text-white mb-1">M-Pesa AI Assistant</div>
+          <div className="font-display font-bold text-2xl text-white mb-1">Fidika</div>
           <div className="text-sidebar-text text-sm">Admin console</div>
         </div>
 
