@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">M-Pesa AI Assistant</string>
+    <string name="app_name">Fidika</string>
     <string name="login_subtitle">Sign in to link this device</string>
     <string name="phone_number_hint">Phone number</string>
     <string name="password_hint">Password</string>
