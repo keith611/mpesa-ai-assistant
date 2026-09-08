@@ -1,5 +1,15 @@
-export type Role = "SUPER_ADMIN" | "ADMIN" | "SUPPORT" | "USER";
-export type UserStatus = "ACTIVE" | "SUSPENDED" | "PENDING" | "DELETED";
+
+export type Role =
+  | "SUPER_ADMIN"
+  | "ADMIN"
+  | "SUPPORT"
+  | "USER";
+
+export type UserStatus =
+  | "ACTIVE"
+  | "SUSPENDED"
+  | "PENDING"
+  | "DELETED";
 
 export interface AppUser {
   "User ID": string;
@@ -90,3 +100,4 @@ export interface MonthlyReport {
   Net: number;
   "Generated At": string;
 }
+```
