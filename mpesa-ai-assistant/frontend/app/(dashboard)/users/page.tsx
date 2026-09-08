@@ -66,7 +66,8 @@ export default function UsersPage() {
   ) {
     if (
       !confirm(
-        `Generate a new temporary password for ${fullName}?\n\nTheir current password will stop working immediately.`
+        `Generate a new temporary password for ${fullName}?\n\n` +
+          `Their current password will stop working immediately.`
       )
     ) {
       return;
@@ -74,7 +75,7 @@ export default function UsersPage() {
 
     try {
       const resp = await api.post(
-        `/users/${userId}/reset-password"
+        `/users/${userId}/reset-password`
       );
 
       alert(
