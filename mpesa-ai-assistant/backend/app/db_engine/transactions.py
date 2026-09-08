@@ -1,6 +1,6 @@
-
+'''
 Transactions table access layer (Postgres via SQLAlchemy).
-
+'''
 
 from datetime import datetime, timezone
 
