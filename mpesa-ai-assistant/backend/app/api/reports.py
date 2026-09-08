@@ -53,6 +53,18 @@ def overview():
         "total_expenses": txn_totals["total_expenses"],
     }
 
+@router.get("/balance/{user_id}")
+def user_balance(
+    user_id: str,
+    claims: dict = Depends(get_current_claims),
+):
+    _authorize_user_access(claims, user_id)
+
+    balance = txn_engine.latest_balance(user_id)
+
+    return {
+        "balance": balance
+    }
 
 # ---------- Daily / Weekly / Monthly / Annual reports (per spec section: Reports) ----------
 
