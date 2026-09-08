@@ -74,7 +74,7 @@ export default function UsersPage() {
 
     try {
       const resp = await api.post(
-        `/users/${userId}/reset-password`
+        `/users/${userId}/reset-password"
       );
 
       alert(
@@ -106,7 +106,6 @@ export default function UsersPage() {
 
     try {
       await api.delete(`/users/${userId}`);
-
       await load();
     } catch (err: any) {
       alert(
@@ -241,7 +240,7 @@ export default function UsersPage() {
 
                   {/* Phone */}
                   <td className="px-4 py-2.5 text-ink-secondary">
-                    {u.Phone || "—"}
+                    {u["Phone Number"] || "—"}
                   </td>
 
                   {/* Role */}
@@ -258,8 +257,8 @@ export default function UsersPage() {
 
                   {/* Registered */}
                   <td className="px-4 py-2.5 text-ink-secondary">
-                    {u["Registered At"]
-                      ? formatDate(u["Registered At"])
+                    {u["Registration Date"]
+                      ? formatDate(u["Registration Date"])
                       : "—"}
                   </td>
 
