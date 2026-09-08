@@ -119,10 +119,13 @@ def search_transactions(user_id=None, keyword=None,
         if transaction_type:
             query = query.filter(Transaction.transaction_type == transaction_type)
         if keyword:
-            k = f"%{keyword.lower()}%"
-            query = query.filter(
-                (Transaction.sender.ilike(k)) | (Transaction.receiver.ilike(k)) | (Transaction.transaction_code.ilike(k))
-            )
+    k = f"%{keyword.lower()}%"
+    query = query.filter(
+        (Transaction.user_id.ilike(k)) |
+        (Transaction.sender.ilike(k)) |
+        (Transaction.receiver.ilike(k)) |
+        (Transaction.transaction_code.ilike(k))
+    )
         if date_from:
             query = query.filter(Transaction.date >= date_from)
         if date_to:
