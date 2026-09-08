@@ -100,4 +100,4 @@ export interface MonthlyReport {
   Net: number;
   "Generated At": string;
 }
-```
+
