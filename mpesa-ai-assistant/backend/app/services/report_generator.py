@@ -38,7 +38,7 @@ def build_pdf_report(user_id: str, date_from: str, date_to: str) -> bytes:
     subtitle_style = ParagraphStyle("SubtitleStyle", parent=styles["Normal"], fontSize=10, textColor=colors.grey)
 
     story = [
-        Paragraph("FIDIKA BUSINESS FINANCIAL STATEMENT", title_style),
+        Paragraph("FIDIKA FINANCIAL STATEMENT", title_style),
         Paragraph(f"{user.get('Full Name', user_id) if user else user_id} &nbsp;|&nbsp; {date_from} to {date_to}", subtitle_style),
         Spacer(1, 10 * mm),
     ]
