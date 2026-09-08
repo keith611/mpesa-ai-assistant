@@ -68,16 +68,6 @@ def user_balance(
 
 # ---------- Daily / Weekly / Monthly / Annual reports (per spec section: Reports) ----------
 
-@router.get("/{period}/{user_id}")
-def period_report(period: str, user_id: str, claims: dict = Depends(get_current_claims)):
-    """period is one of: daily, weekly, monthly, annual"""
-    _authorize_user_access(claims, user_id)
-    if period not in PERIODS:
-        raise HTTPException(status_code=400, detail=f"period must be one of {sorted(PERIODS)}")
-    date_from, date_to = _period_bounds(period)
-    summary = txn_engine.spending_summary(user_id, date_from, date_to)
-    return {"period": period, "date_from": date_from, "date_to": date_to, **summary}
-
 
 @router.get("/spending/{user_id}")
 def spending_report(user_id: str, period: str = "monthly", claims: dict = Depends(get_current_claims)):
@@ -159,3 +149,15 @@ def system_logs(limit: int = 100):
 @router.get("/system/errors", dependencies=[Depends(require_min_role("ADMIN"))])
 def system_errors(limit: int = 100):
     return log_engine.get_error_logs(limit=limit)
+
+@router.get("/{period}/{user_id}")
+def period_report(period: str, user_id: str, claims: dict = Depends(get_current_claims)):
+    """period is one of: daily, weekly, monthly, annual"""
+    _authorize_user_access(claims, user_id)
+    if period not in PERIODS:
+        raise HTTPException(status_code=400, detail=f"period must be one of {sorted(PERIODS)}")
+    date_from, date_to = _period_bounds(period)
+    summary = txn_engine.spending_summary(user_id, date_from, date_to)
+    return {"period": period, "date_from": date_from, "date_to": date_to, **summary}
+
+
